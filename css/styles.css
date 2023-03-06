@@ -100,7 +100,8 @@ section.hero>*{
 }
 .hero .banner{
     grid-column: 1/7;
-    min-height: 80vh;
+    /* min-height: 80vh; */
+    height: 600px;
     /* background-color: red; */
     background-image: url(/images/Rectangle\ 1.png);
     background-repeat: no-repeat;
