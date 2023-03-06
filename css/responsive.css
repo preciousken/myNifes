@@ -47,4 +47,7 @@
     header{
         display: none;
     }
+    .mobile{
+        display: block;
+    }
 }
