@@ -19,6 +19,7 @@
 
     /* colors */
     --Main1:rgb(29,14,106);
+    --transparent:rgba(0, 0, 0,0.5);
     --wt:#fff;
 
 
@@ -104,13 +105,26 @@ header button{
     font-size: 1.5rem;
     border: 1px solid var(--wt);
 }
+
 .sidebar{
+    display: none;
     position: relative;
     width: 100px;
 }
-.sidebar p{
-    position: absolute;
-    top: 10px;
+.sidebar >*{
+    position: fixed;
+    top: 0;
+    background-color: var(--transparent);
+    height: 100vh;
+    width: 100vw;
+}
+.sidebar .content{
+    background-color: red;
+    width: 50%;
+    height: 100%;
+}
+.sidebar .content .details{
+    padding: 10px;
 }
 /* ***********************mobile section ends*********************** */
 
