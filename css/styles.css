@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+:root{
+    --maxWidth: 1100px;
+
+    
+
+    /* fonts here */
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --roboto2: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Romanesco', cursive; */
+
+
+
+    /* colors */
+    --Main1:rgb(29,14,106);
+    --wt:#fff;
+
+
+}
+body{
+    background-color: var(--wt);
+    font-family: var(--roboto);
+}
+
+
+
+
+
+
+
+/* ***********************header section here*********************** */
+
+header{
+    /* background-color: red; */
+    min-height: 45px;
+    display: grid;
+    /* max-width: var(--maxWidth); */
+    grid-template-columns: 0.5fr repeat(4,1fr) 0.5fr;
+}
+header>*{
+    /* border: 1px solid red; */
+}
+header .brand{
+    grid-column: 2/4;
+    display: grid;
+    justify-content:start;
+    align-items: center;
+}
+header .links{
+    grid-column: 4/6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 0.5fr;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+header .links >* {
+    /* background-color: red; */
+    text-align: center;
+    border: 1px solid transparent;
+}
+header button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--Main1);
+    color: var(--wt);
+}
+/* ***********************header section ends*********************** */
+
+
+
+
+
+
+
+/* ***********************hero section here*********************** */
+section.hero{
+    display: grid;
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+}
+section.hero>*{
+    /* border: 1px solid red; */
+}
+.hero .banner{
+    grid-column: 1/7;
+    min-height: 80vh;
+    /* background-color: red; */
+    background-image: url(/images/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.hero .banner>*{
+    /* border: 1px solid red; */
+}
+.hero .banner .content{
+    grid-column: 2/6;
+    grid-row: 2/4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.hero .banner .content >*{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.hero .banner .content h1{
+    font-family: var(--poppins);
+    color: var(--wt);
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+.hero .banner .content p{
+    color: var(--wt);
+    font-family: var(--poppins);
+    font-weight: normal;
+}
+.hero .banner .content .watch{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.hero .banner .content .watch i{
+    font-size: 3rem;
+    color: var(--Main1);
+}
+.hero .banner .content .watch button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-family: var(--poppins);
+    font-size:2rem;
+    color: var(--wt);
+}
+/* ***********************hero section ends*********************** */
