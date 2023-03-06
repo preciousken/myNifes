@@ -21,6 +21,10 @@
 }
 
 
+
+
+
+
 /* ****************less than 1000px *****************/
 @media screen and (max-width: 1000px) {
     header .brand{
@@ -31,5 +35,16 @@
     }
     header .links{
         grid-column: 3/6;
+    }
+}
+
+
+
+
+
+/* ****************less than 660px *****************/
+@media screen and (max-width: 660px) {
+    header{
+        display: none;
     }
 }
