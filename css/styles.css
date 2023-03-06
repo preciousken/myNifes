@@ -52,6 +52,9 @@ header .brand{
     justify-content:start;
     align-items: center;
 }
+header .brand img{
+    width: 150px;
+}
 header .links{
     grid-column: 4/6;
     display: grid;
