@@ -36,6 +36,23 @@
     header .links{
         grid-column: 3/6;
     }
+
+    
+.hero .banner .content h1{
+    font-size: 1.3rem;
+}
+
+.hero .banner .content p{
+    font-size: 0.65rem;
+}
+
+.hero .banner .content .watch i{
+    font-size: 1.5rem;
+}
+.hero .banner .content .watch button{
+    font-size:1rem;
+}
+
 }
 
 
