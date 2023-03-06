@@ -21,6 +21,9 @@
     --Main1:rgb(29,14,106);
     --transparent:rgba(0, 0, 0,0.5);
     --wt:#fff;
+    --wt2:#232323;
+    --gray:gray;
+    --black:#000;
 
 
 }
@@ -119,12 +122,22 @@ header button{
     width: 100vw;
 }
 .sidebar .content{
-    background-color: red;
+    background-color: var(--black);
     width: 50%;
     height: 100%;
 }
 .sidebar .content .details{
     padding: 10px;
+}
+.sidebar .content .details>*{
+    background-color:var(--wt2);
+    margin: 10px;   
+    padding: 5px;
+    border-radius: 5px;
+}
+.sidebar .content .details>* a{
+    text-decoration: none;
+    color: var(--gray);
 }
 /* ***********************mobile section ends*********************** */
 
